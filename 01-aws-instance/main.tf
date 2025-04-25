@@ -19,6 +19,6 @@ resource "aws_instance" "app_server" {
   subnet_id     = "subnet-0b6a0fb2d405b768d" // replace with your subnet ID
 
   tags = {
-    Name = "ExampleAppServerInstance"
+    Name = var.instance_name
   }
 }
